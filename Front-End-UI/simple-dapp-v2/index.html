@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeSend DApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="public/logo.png" alt="SafeSend Logo" class="logo">
+      <h1 class="title">SafeSend</h1>
+    </div>
+  </header>
+  <main>
+    <div class="wallet-connection">
+      <button id="connectButton" class="connect-button">Connect Wallet</button>
+      <div id="account" class="account-display"></div>
+    </div>
+    <section class="transfer-section ether-section">
+      <h2>Ether Transfers</h2>
+      <div class="transfer-box">
+        <h3>Claim Ether Back</h3>
+        <button id="claimBackEther" class="write-button" disabled>Write</button>
+      </div>
+      <div class="transfer-box">
+        <h3>Claim Ether</h3>
+        <input id="etherSenderAddr" type="text" placeholder="Sender Address">
+        <button id="claimEther" class="write-button" disabled>Write</button>
+      </div>
+      <div class="transfer-box">
+        <h3>Send Ether</h3>
+        <input id="etherReceiver" type="text" placeholder="Receiver Address">
+        <input id="etherAmount" type="text" placeholder="Amount in ETH">
+        <button id="sendEther" class="write-button" disabled>Write</button>
+      </div>
+    </section>
+    <div class="split-section">
+      <section class="transfer-section croak-section">
+        <h2><img src="public/croak_logo.png" alt="CROAK Logo" class="section-logo"> CROAK Transfers</h2>
+        <div class="transfer-box">
+          <h3>Claim CROAK Back</h3>
+          <button id="claimBackCROAK" class="write-button" disabled>Write</button>
+        </div>
+        <div class="transfer-box">
+          <h3>Claim CROAK</h3>
+          <input id="croakSenderAddr" type="text" placeholder="Sender Address">
+          <button id="claimCROAK" class="write-button" disabled>Write</button>
+        </div>
+        <div class="transfer-box">
+          <h3>Send CROAK</h3>
+          <input id="croakReceiver" type="text" placeholder="Receiver Address">
+          <input id="croakAmount" type="text" placeholder="Amount">
+          <button id="sendCROAK" class="write-button" disabled>Write</button>
+        </div>
+      </section>
+      <section class="transfer-section efrogs-section">
+        <h2><img src="public/efrogs_logo.png" alt="Efrogs Logo" class="section-logo"> Efrogs Transfers</h2>
+        <div class="transfer-box">
+          <h3>Claim Efrogs Back</h3>
+          <button id="claimBackEfrogs" class="write-button" disabled>Write</button>
+        </div>
+        <div class="transfer-box">
+          <h3>Claim Efrogs</h3>
+          <input id="efrogsSenderAddr" type="text" placeholder="Sender Address">
+          <button id="claimEfrogs" class="write-button" disabled>Write</button>
+        </div>
+        <div class="transfer-box">
+          <h3>Send Efrogs</h3>
+          <input id="efrogsReceiver" type="text" placeholder="Receiver Address">
+          <input id="efrogsTokenId" type="text" placeholder="Token ID">
+          <button id="sendEfrogs" class="write-button" disabled>Write</button>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

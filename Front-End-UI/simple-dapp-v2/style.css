@@ -1,0 +1,155 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121212;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  height: 100px;
+  filter: drop-shadow(0 0 10px rgba(0, 123, 255, 0.7));
+}
+
+.title {
+  font-size: 2.5em;
+  color: #007bff;
+  text-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+  margin: 0;
+}
+
+main {
+  width: 90%;
+  max-width: 1280px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.wallet-connection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.connect-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.connect-button:hover {
+  background-color: #0056b3;
+}
+
+.account-display {
+  color: white;
+}
+
+.transfer-section {
+  margin-bottom: 20px;
+}
+
+.transfer-section h2 {
+  background-color: #28a745;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.ether-section {
+  flex: 1;
+}
+
+.split-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.split-section .transfer-section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.section-logo {
+  height: 40px;
+  margin-right: 10px;
+  filter: drop-shadow(0 0 10px rgba(0, 123, 255, 0.7));
+}
+
+.transfer-box {
+  background-color: #2a2a2a;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transfer-box h3 {
+  margin-bottom: 10px;
+  color: #28a745;
+}
+
+.transfer-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3a3a3a;
+  color: white;
+}
+
+.write-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.write-button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,18 @@
+{
+  "name": "simple-dapp-v2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.3.1"
+  },
+  "dependencies": {
+    "@metamask/sdk": "^0.26.4",
+    "ethers": "^6.13.1"
+  }
+}
